@@ -31,7 +31,7 @@
         </a>
         <nav>
             <a href="#">About Me</a>
-            <a href="https://rzp.io/l/zgy6kzz">Donate</a>
+            <a href="donate.html">Donate</a>
             <a href="#">Contact Me</a>
         </nav>
       
@@ -116,45 +116,8 @@
   </nav>
 </div>
 
-<!-- js -->
-<script>
-    function init() {
-        
-        window.addEventListener('scroll', function(e){
-            var header = document.querySelector("#headerid");
-            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-                shrinkOn = 70;
-             
-            if (distanceY > shrinkOn) {
-                header.classList.add("smaller");
-            } else {
-              if (header.classList.contains("smaller")) {
-                header.classList.remove("smaller");
-              }
-            }
-        });
-    }
-    window.onload = init();
-</script>
-<script>
-(function() {
-  var toggle = document.querySelector("#toggle");
-  var overlay = document.querySelector("#overlay");
-  
-  
-  toggle.addEventListener("click", function() {
-    toggle.classList.toggle("active")
-    overlay.classList.toggle("open");
-    
-  });
-  
-})();  
 
-  
-</script>  
-</body>
-  
-  
+
 
 </body>
 
