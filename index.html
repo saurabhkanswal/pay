@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>doula homepage</title>
+  
+  
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css'>
+
+      <link rel="stylesheet" href="./style.css">
+
+  
+</head>
+
+<body>
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Coming+Soon" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
+
+
+<body class="site index">
+<div class="page-wrapper site ">
+<div class="header-wrapper">
+  <header id="headerid" class="site-header">
+    <div class="container clearfix">
+        <a href="index.html"> 
+        <img id="logo" src="https://baristanet.com/wp-content/uploads/2012/08/doula-logo.jpg">
+        </a>
+        <nav>
+            <a href="#">About Me</a>
+            <a href="https://rzp.io/l/zgy6kzz">Donate</a>
+            <a href="#">Contact Me</a>
+        </nav>
+      
+    </div>
+</header><!-- /header -->
+</div>
+<div class="button_container" id="toggle">
+        <span class="top"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
+      </div>
+<main class="site-content padding">
+
+  <div class = "hero-container clearfix"> 
+    <div id="hero" class="hero-index" >
+      <h1 class='hero-title'> I Support You.</h1> 
+    </div>
+  </div>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<section class = "homepage-one clearfix">
+  <div class = "container clearfix"> 
+    <div class="row">
+      <div id="profile-pic" class="five columns">
+        <img src="https://s-media-cache-ak0.pinimg.com/736x/fc/ff/c6/fcffc6c4b640f1eff029192d63b363cd.jpg">
+      </div>
+      <div id = "homepage-intro" class="seven columns">
+        <p> Hi I'm ayushi and I'm a birth and postpartum doula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut luctus ante. Aliquam leo dolor, condimentum eu magna et, laoreet varius leo. Nulla ligula leo, eleifend id sollicitudin nec, egestas nec nisl. Donec in magna mi. Ut finibus justo id enim volutpat sodales. Pellentesque non tellus ac velit semper fermentum at a libero. Quisque imperdiet consectetur mi, vitae ultricies mauris pellentesque id. </p>
+        <blockquote>
+        When you change the way you view birth the way you birth will change.
+        <cite>~Marie Mongan</cite>
+        </blockquote>
+      </div>
+    </div>
+  </div>  
+</section>
+
+<section class = "homepage-two clearfix">
+  <div class = "container"> 
+    <div class="row">
+      <div  class="four columns homepage-two-box">
+        <h1>Birth Support</h1> 
+        <p> As your birth doula, I will personally support you throughout labor and birth. If you need me at anytime I will help you make this proccess exactly how you would like it to be. </p>
+        <a class="first after" href=#><span>Learn More</span> </a> 
+      </div>
+      <div  class="four columns homepage-two-box">
+        <h1>Postpartum Care</h1> 
+        <p> It's no easy job transitioning to parenthood. I will serve as a solid source of guidance to make this transition as smooth as possible and lay the foundation for success. </p>
+        <a class="first after" href=#><span>Learn More</span> </a> 
+      </div>
+      <div  class="four columns homepage-two-box">
+        <h1>Couple Counseling</h1> 
+        <p> Having a child is no simple decision amoung couples. With it brings a myriad of emotions: excitment, anxiety, curiosity. Lets talk together and work through your feelings.</p>
+        <a class="first after" href=#><span>Learn More</span> </a> 
+      </div>
+    </div>
+  </div>  
+</section>
+</main>
+  
+<footer class="site-footer">
+  <div class="container clearfix">
+    <h2>Want to learn more? </h2>
+    <hr class= "gradient">
+      <p>Feel free to contact me to set up an initial in-person or phone consultation! </p>
+        <div class="footer-button bg-2">      
+          <button class="button button--antiman button--text-thick button--text-upper button--size-s button--inverted-alt button--round-s button--border-thick" onclick="openNav()" ><i class="button__icon icon icon-map-marker"></i><span><a href="https://rzp.io/l/zgy6kzz">Donate me</a></span></button>
+        </div>
+  </div>
+</footer>
+</div>
+
+<div class="overlay" id="overlay">
+  <nav class="overlay-menu">
+    <ul>
+      <li ><a href="#">About Me</a></li>
+      <li><a href="#">A Doula?</a></li>
+      <li><a href="https://pages.razorpay.com/pl_ChBemRSFb6YD1y/view">Donate</a></li>
+      <li><a href="#">Testimonials</a></li>
+    </ul>
+  </nav>
+</div>
+
+<!-- js -->
+<script>
+    function init() {
+        
+        window.addEventListener('scroll', function(e){
+            var header = document.querySelector("#headerid");
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 70;
+             
+            if (distanceY > shrinkOn) {
+                header.classList.add("smaller");
+            } else {
+              if (header.classList.contains("smaller")) {
+                header.classList.remove("smaller");
+              }
+            }
+        });
+    }
+    window.onload = init();
+</script>
+<script>
+(function() {
+  var toggle = document.querySelector("#toggle");
+  var overlay = document.querySelector("#overlay");
+  
+  
+  toggle.addEventListener("click", function() {
+    toggle.classList.toggle("active")
+    overlay.classList.toggle("open");
+    
+  });
+  
+})();  
+
+  
+</script>  
+</body>
+  
+  
+
+</body>
+
+</html>
